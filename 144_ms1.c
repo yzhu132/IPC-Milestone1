@@ -1,17 +1,17 @@
 #include <stdio.h>
 // tools
 void welcome(void);
-void prnTitle(void);
-void prnFooter(double gTotal);
-void clrKyb(void);
+void printTitle(void);
+void printFooter(double gTotal);
+void flushKeyboard(void);
 void pause(void);
 int getInt(void);
-double getDbl(void);
+double getDouble(void);
 int getIntLimited(int lowerLimit, int upperLimit);
-double getDblLimited(double lowerLimit, double upperLimit);
+double getDoubleLimited(double lowerLimit, double upperLimit);
 // app interface
 int yes(void);
-void GrocInvSys(void);
+void GroceryInventorySystem(void);
 int menu(void);
 
 

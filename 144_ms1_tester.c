@@ -11,17 +11,17 @@
 #include <stdio.h>
 // tools
 void welcome(void);
-void prnTitle(void);
-void prnFooter(double gTotal);
-void clrKyb(void);
+void printTitle(void);
+void printFooter(double gTotal);
+void flushKeyboard(void);
 void pause(void);
 int getInt(void);
-double getDbl(void);
+double getDouble(void);
 int getIntLimited(int lowerLimit, int upperLimit);
-double getDblLimited(double lowerLimit, double upperLimit);
+double getDoubleLimited(double lowerLimit, double upperLimit);
 // app interface
 int yes(void);  
-void GrocInvSys(void); 
+void GroceryInventorySystem(void); 
 int menu(void);  
 
 
@@ -32,21 +32,21 @@ int main(void) {
 
    // uncommnet each tester as you complete the develpment of that section:
 
-   //// testing prnTitle() 
+   //// testing printTitle() 
    //printf("listing header and footer with grand total:\n");
-   //prnTitle();
+   //printTitle();
    ////---------------------------------------------------------------
 
 
-   //// Testing prnFooter()  
+   //// Testing printFooter()  
    //
-   //prnFooter(1234.5678);
+   //printFooter(1234.5678);
    //printf("listing header and footer without grand total:\n");
-   //prnTitle();
-   //prnFooter(-1);
+   //printTitle();
+   //printFooter(-1);
    ////---------------------------------------------------------------
 
-   //// Testing Pause() and clrKyb() 
+   //// Testing Pause() and flushKeyboard() 
    //pause();
    ////---------------------------------------------------------------
 
@@ -67,21 +67,21 @@ int main(void) {
 
    //// Testing Get Double 
    //printf("Enter a floating point number: ");
-   //dVal = getDbl();
+   //dVal = getDouble();
    //printf("You entered: %0.2lf\n", dVal);
    ////---------------------------------------------------------------
 
 
    //// Tesing Get Double Limited 
    //printf("Enter a floating point number between 10.00 and 20.00: ");
-   //dVal = getDblLimited(10.0, 20.0);
+   //dVal = getDoubleLimited(10.0, 20.0);
    //printf("You entered: %0.2lf\n", dVal);
    ////---------------------------------------------------------------
 
 
 
    //// testing the App interface
-   //GrocInvSys();
+   //GroceryInventorySystem();
    ////---------------------------------------------------------------
 
    printf("End of tester program for milestone one!\n");
